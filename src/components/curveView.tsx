@@ -5,12 +5,12 @@ import { ApexOptions } from "apexcharts";
 
 
 
-interface ExampleChartProps {
+interface CurveViewProps {
   xAxis: string[],
   yAxis: number[],
 }
 
-export default function ExampleChart(props: ExampleChartProps) {
+export default function CurveView(props: CurveViewProps) {
   let [chartCtx, setChartCtx] = useState<ApexOptions | null>(null);
 
   useEffect(() => {
@@ -38,7 +38,7 @@ export default function ExampleChart(props: ExampleChartProps) {
     <Chart 
       options={chartCtx}
       series={chartCtx.series}
-      type="bar"
+      type="line"
       width="500"
       height="500"
     />
