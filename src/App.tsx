@@ -2,18 +2,18 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 
+import ExampleChart from "./components/exampleChart"
+
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div className="App">
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <ExampleChart
+          xAxis={["ES", "ZN", "GE", "NG", "CL"]}
+          yAxis={[1215.50, 7818.25, -120.25, -1025.75, -375.00]}
+        />
       </div>
       <h1 className="text-3xl font-bold underline">Vite + React</h1>
       <div className="card">
