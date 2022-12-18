@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 
-import CurveView from "./components/curveView.tsx"
+import CurveView from "./components/curveView"
 
 interface UsTreasuryCurve {
   date: string
